@@ -1,0 +1,16 @@
+name: Validate Repo
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check required directories exist
+        run: |
+          for d in 01-classification 02-phishing-spoofing 03-malware-analysis 04-financial-fraud 05-report tools; do
+            [ -d "$d" ] || { echo "Missing directory: $d"; exit 1; }
+          done
+      - name: Markdown lint
+        uses: DavidAnson/markdownlint-cli2-action@v16
+        with:
+          globs: '**/*.md'

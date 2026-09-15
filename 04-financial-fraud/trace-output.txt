@@ -1,0 +1,17 @@
+=== Anomaly Detection ===
+  ⚠ ACC-VICTIM-01: high-value txn T1003 (49500.00 INR) to PAYEE-MULE-A at 2026-06-13T18:22:11 flagged for review
+  ⚠ ACC-VICTIM-01: high-value txn T1004 (49500.00 INR) to PAYEE-MULE-A at 2026-06-13T18:23:05 flagged for review
+  ⚠ ACC-VICTIM-01: high-value txn T1005 (49000.00 INR) to PAYEE-MULE-A at 2026-06-13T18:24:52 flagged for review
+
+=== Fraud Chain Trace (victim -> mule hops -> crypto off-ramp) ===
+  2026-06-13T18:22:11  ACC-VICTIM-01   -> PAYEE-MULE-A            49500.00 INR  [UPI]  (T1003)
+  2026-06-13T18:23:05  ACC-VICTIM-01   -> PAYEE-MULE-A            49500.00 INR  [UPI]  (T1004)
+  2026-06-13T18:24:52  ACC-VICTIM-01   -> PAYEE-MULE-A            49000.00 INR  [UPI]  (T1005)
+  2026-06-13T18:41:19  ACC-MULE-A      -> PAYEE-MULE-B           145000.00 INR  [IMPS]  (T1006)
+  2026-06-13T19:02:37  ACC-MULE-B      -> PAYEE-MULE-C           140000.00 INR  [IMPS]  (T1007)
+  2026-06-13T19:30:04  ACC-MULE-C      -> BTC-WALLET-SIM-1       138000.00 INR  [CRYPTO_OFFRAMP]  (T1008)
+  2026-06-14T10:05:22  ACC-VICTIM-02   -> PAYEE-MULE-A            62000.00 INR  [UPI]  (T1010)
+
+=== Summary ===
+  Total flagged amount: 633,000.00 INR
+  Final destination: BTC-WALLET-SIM-1 (simulated crypto off-ramp)
