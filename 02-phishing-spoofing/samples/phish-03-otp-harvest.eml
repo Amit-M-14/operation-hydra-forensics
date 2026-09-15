@@ -1,0 +1,18 @@
+From: "UPI Support" <noreply@upi-secure-verify.com>
+To: victim@example.com
+Reply-To: help@upi-secure-verify.com
+Return-Path: <return@smtp-cluster-14.top>
+Subject: Your UPI ID will be deactivated — Confirm OTP
+Date: Sat, 13 Jun 2026 18:02:44 +0000
+Message-ID: <otp14@smtp-cluster-14.top>
+Received: from smtp-cluster-14.top (unknown [103.224.182.9])
+    by mx.example.com with ESMTP id r3p8; Sat, 13 Jun 2026 18:02:47 +0000
+Content-Type: text/html; charset="UTF-8"
+
+Your UPI ID is scheduled for deactivation due to inactivity. To keep
+it active, enter the OTP sent to your phone at the link below within
+10 minutes.
+
+Confirm: http://upi-secure-verify.com.otp-confirm-gateway.net/verify
+
+UPI Support Team

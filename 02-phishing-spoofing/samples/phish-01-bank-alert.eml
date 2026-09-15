@@ -1,0 +1,21 @@
+From: "SecureBank Alerts" <alerts@secure-bank0nline.com>
+To: victim@example.com
+Reply-To: support@secure-bank0nline.com
+Return-Path: <bounce@mkt-relay-77.ru>
+Subject: URGENT: Unusual login detected on your account
+Date: Wed, 10 Jun 2026 03:14:02 +0000
+Message-ID: <a1f9c2@mkt-relay-77.ru>
+Received: from mkt-relay-77.ru (unknown [185.220.101.44])
+    by mx.example.com with ESMTP id x7k2; Wed, 10 Jun 2026 03:14:05 +0000
+Received: from [10.0.4.12] by mkt-relay-77.ru with HTTP; Wed, 10 Jun 2026 03:13:58 +0000
+Content-Type: text/html; charset="UTF-8"
+
+Dear Customer,
+
+We detected a login attempt from a new device. If this was not you,
+verify your identity immediately or your account will be suspended
+within 24 hours.
+
+Verify now: http://secure-bank0nline.com.verify-id-portal.net/login
+
+SecureBank Security Team

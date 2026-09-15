@@ -1,0 +1,21 @@
+
+=== secure-bank0nline.com (sending IP 185.220.101.44) ===
+domain: secure-bank0nline.com
+spf: FAIL — no SPF record published, any host can send as this domain
+dkim: FAIL — no DKIM signature / key published
+dmarc: FAIL — no DMARC record, spoofed mail has no enforcement policy to be rejected by
+verdict: HIGH SPOOFING RISK
+
+=== vendor-invoices-corp.com (sending IP 45.153.160.2) ===
+domain: vendor-invoices-corp.com
+spf: PASS (hard fail policy present)
+dkim: FAIL — no DKIM signature / key published
+dmarc: WEAK — DMARC present but policy is monitor-only (p=none), spoofed mail still delivered
+verdict: MODERATE RISK
+
+=== upi-secure-verify.com (sending IP 103.224.182.9) ===
+domain: upi-secure-verify.com
+spf: FAIL — no SPF record published, any host can send as this domain
+dkim: FAIL — no DKIM signature / key published
+dmarc: FAIL — no DMARC record, spoofed mail has no enforcement policy to be rejected by
+verdict: HIGH SPOOFING RISK
